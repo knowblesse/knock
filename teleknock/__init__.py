@@ -1,9 +1,10 @@
 import requests
+from pathlib import Path
 
 class teleknock():
     def __init__(self):
         try:
-            with open("credentials.txt", "r") as f:
+            with open(Path().home() / "credentials.txt", "r") as f:
                 text = f.read().split('\n')
         except FileNotFoundError:
             raise(FileNotFoundError("Can not find credential file"))
