@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "knock-telegram"
+name = "teleknock"
 version = "0.0.1"
 authors = [
   { name="Knowblesse", email="knowblesse@gmail.com" },
@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/knowblesse/knock-telegram"
-"Bug Tracker" = "https://github.com/knowblesse/knock-telegram/issues"
+"Homepage" = "https://github.com/knowblesse/teleknock"
+"Bug Tracker" = "https://github.com/knowblesse/teleknock/issues"

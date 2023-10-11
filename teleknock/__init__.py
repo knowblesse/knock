@@ -1,6 +1,6 @@
 import requests
 
-class knock_telegram():
+class teleknock():
     def __init__(self):
         try:
             with open("credentials.txt", "r") as f:
@@ -13,7 +13,7 @@ class knock_telegram():
         self.chat_id = text[1]
     def sendMsg(self, obj):
         sendMessage = str(obj)
-        requests.get(
+        response = requests.get(
             "https://api.telegram.org/"
             + self.token
             + "/sendMessage?chat_id="
@@ -21,3 +21,4 @@ class knock_telegram():
             +"&text="
             + sendMessage
         )
+        return response.ok
