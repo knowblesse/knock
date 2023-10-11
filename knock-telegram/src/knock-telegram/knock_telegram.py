@@ -1,6 +1,6 @@
 import requests
 
-class Knock():
+class knock_telegram():
     def __init__(self):
         try:
             with open("credentials.txt", "r") as f:
